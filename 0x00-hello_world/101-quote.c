@@ -8,14 +8,13 @@
 int main(void)
 {
 	int i;
-	char sentence[] = "and that piece of art is useful\" - Dora Korpar, "
-			   "2015-10-19";
+	char text[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
 	i = 0;
 
-	while (sentence[i] != '\0')
+	while (text[i] != '\0')
 	{
-		putchar(sentence[i]);
+		putchar(text[i]);
 		i++;
 	}
 	putchar('\n');
