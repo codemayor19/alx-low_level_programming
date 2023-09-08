@@ -12,13 +12,14 @@ int main(void)
 	c = 0;
 	do {
 		putchar('0' + c);
-		if (c == 9)
-		{
-			return (0);
-		} else
+		if (c != 9)
 		{
 			putchar(',');
 			putchar(' ');
+		} else
+		{
+			putchar('\n');
+			return (0);
 		}
 		c++;
 	} while (c <= 9);
