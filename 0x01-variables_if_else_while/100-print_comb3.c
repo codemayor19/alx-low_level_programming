@@ -15,9 +15,12 @@ int main(void)
 		do {
 			putchar('0' + c);
 			putchar('0' + i);
-			putchar(',');
-			putchar(' ');
-			i++;
+			if (c != 8)
+			{
+				putchar(',');
+				putchar(' ');
+				i++;
+			}
 		} while (i <= 9);
 		c++;
 	} while (c <= 8);
