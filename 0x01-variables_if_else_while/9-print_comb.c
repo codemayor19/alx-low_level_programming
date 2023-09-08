@@ -12,7 +12,7 @@ int main(void)
 	c = 0;
 	do {
 		putchar('0' + c);
-		putchar('\,');
+		putchar(',');
 		putchar(' ');
 		c++;
 	} while (c <= 9);
