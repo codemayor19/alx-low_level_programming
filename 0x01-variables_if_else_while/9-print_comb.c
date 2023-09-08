@@ -12,8 +12,14 @@ int main(void)
 	c = 0;
 	do {
 		putchar('0' + c);
-		putchar(',');
-		putchar(' ');
+		if (c == 9)
+		{
+			return (0);
+		} else
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		c++;
 	} while (c <= 9);
 	putchar('\n');
