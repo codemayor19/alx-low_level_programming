@@ -20,10 +20,13 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 				i++;
+			} else
+			{
+				putchar('\n');
+				return (0);
 			}
 		} while (i <= 9);
 		c++;
 	} while (c <= 8);
-	putchar('\n');
 	return (0);
 }
