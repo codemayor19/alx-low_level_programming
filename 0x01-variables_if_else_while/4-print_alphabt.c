@@ -11,11 +11,15 @@ int main(void)
 
 	alpha = 'a';
 	do {
-		if (alpha != 'e'|| alpha != 'q')
+		if (alpha != 'e' && alpha != 'q')
 		{
 			putchar(alpha);
 			alpha++;
+		} else
+		{
+			alpha++;
 		}
+
 	} while (alpha <= 'z');
 	putchar('\n');
 	return (0);
