@@ -23,6 +23,5 @@ int main(void)
 		}
 		c++;
 	} while (c <= 9);
-	putchar('\n');
 	return (0);
 }
