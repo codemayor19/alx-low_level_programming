@@ -23,7 +23,8 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 					k++;
-				} else {
+				} else 
+				{
 					putchar('\n');
 					return (0);
 				}
