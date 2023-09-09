@@ -32,4 +32,5 @@ int main(void)
 		} while (j <= 8);
 		i++;
 	} while (i <= 7);
+	return (0);
 }
