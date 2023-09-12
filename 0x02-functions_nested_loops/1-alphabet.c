@@ -3,6 +3,7 @@
 
 /**
  * main - entry point
+ * print_alphabet - Print alphabet
  *
  * Return: Always 0 (success)
  */
@@ -11,7 +12,7 @@ int main(void)
 	print_alphabet();
 	return (0);
 }
-void print_alphabet(void)
+void print_alphabet()
 {
 	char i;
 
