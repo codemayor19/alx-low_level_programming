@@ -25,12 +25,12 @@ void jack_bauer(void)
 					{
 						break;
 					}
-					putchar('0' + i);
-					putchar('0' + j);
-					putchar(':');
-					putchar('0' + k);
-					putchar('0' + l);
-					putchar('\n');
+					_putchar('0' + i);
+					_putchar('0' + j);
+					_putchar(':');
+					_putchar('0' + k);
+					_putchar('0' + l);
+					_putchar('\n');
 					l++;
 				}
 				if (i == 2 && j > 3)
