@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int i;	
+	int i;
 	char text[] = "_putchar";
 
 	i = 0;
