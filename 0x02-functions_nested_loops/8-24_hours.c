@@ -47,4 +47,5 @@ void jack_bauer(void)
 		}
 		i++;
 	}
+	_putchar('\n');
 }
