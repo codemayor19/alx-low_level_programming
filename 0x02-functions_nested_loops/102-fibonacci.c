@@ -8,24 +8,28 @@
  */
 int main(void)
 {
-	int i, old, new, hold;
+	int i;
+	long j, k;
 
 	i = 0;
-	old = 1;
-	new = 1;
+	j = 1;
+	k = 2;
 	while (i < 50)
 	{
-		if (i == 49)
+		if (i == 0)
 		{
-			printf("%d\n", new);
+			printf("%ld", j);
+		} else if (i == 1)
+		{
+			printf(", %ld", j);
 		} else
 		{
-			printf("%d, ", new);
-			hold = new;
-			new = old + new;
-			old = hold;
+			k += j;
+			j = k - j;
+			printf(", %ld", k);
 		}
 		i++;
 	}
+	printf("\n");
 	return (0);
 }
