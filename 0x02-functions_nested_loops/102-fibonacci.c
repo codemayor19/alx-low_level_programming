@@ -21,7 +21,7 @@ int main(void)
 			printf("%ld", j);
 		} else if (i == 1)
 		{
-			printf(", %ld", j);
+			printf(", %ld", k);
 		} else
 		{
 			k += j;
