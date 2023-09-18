@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - entry point
- * @*n: pointer to variabe
+ * @n: pointer to variabe
  *
  */
 void reset_to_98(int *n)
