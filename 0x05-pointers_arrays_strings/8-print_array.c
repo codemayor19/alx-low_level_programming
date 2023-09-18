@@ -3,8 +3,8 @@
 
 /**
  * print_array
- * @a - array values
- * @n - amt of elements
+ * @a: array values
+ * @n: amt of elements
  */
 void print_array(int *a, int n)
 {
