@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_array
+ * print_array - print array
  * @a: array values
  * @n: amt of elements
  */
