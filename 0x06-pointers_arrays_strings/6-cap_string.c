@@ -9,41 +9,20 @@
 char *cap_string(char *str)
 {
 	int i, num;
+	int count = 13;
+	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if ((str[i] >= 10 && str[i] <= 11) || (str[i] >= 32 && str[i] <= 33))
+		num = 0;
+		while (num < count)
 		{
-			if (num == 0)
+			if ((i == 0 || str[i - 1] == spc[num]) && (str[i] >= 97 && str[i] <= 122))
 			{
-				num = 1;
+				str[i] -= 32;
 			}
-		} else if ((str[i] >= 40 && str[i] <= 41) || str[i] == 123 || str[i] == 125)
-		{
-			if (num == 0)
-			{
-				num = 1;
-			}
-		} else if (str[i] == 24 || str[i] == 63 || str[i] == 58)
-		{
-			if (num == 0)
-			{
-				num = 1;
-			}
-		} else if (str[i] == 44 || str[i] == 46)
-		{
-			if (num == 0)
-			{
-				num = 1;
-			}
-		} else if ((str[i] >= 97 && str[i] <= 122) && num == 1)
-		{
-			str[i] = *(str + i) - 32;
-			num = 0;
-		} else
-		{
-			continue;
+			num++;
 		}
 		i++;
 	}
