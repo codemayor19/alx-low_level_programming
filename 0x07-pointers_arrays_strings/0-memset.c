@@ -2,7 +2,7 @@
 
 /**
  * _memset - memset
- * @: address
+ * @s: address
  * @b: char value
  * @n: integer
  *
