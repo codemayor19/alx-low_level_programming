@@ -20,12 +20,11 @@ void print_diagsums(int *a, int size)
 		j++;
 	}
 	i = 0;
-	j = 0;
-	while (i < size)
+	j = size -1;
+	while (j >= 0)
 	{
-		num_b += a[i * size + (size - j - 1)];
-		i++;
-		j++;
+		num_b += a[j * size + (size - j - 1)];
+		j--;
 	}
 	printf("%d, %d\n", num_a, num_b);
 }
