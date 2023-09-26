@@ -12,15 +12,14 @@ void print_diagsums(int *a, int size)
 	int i, j;
 
 	i = 0;
-	j = 0;
+	num_a = 0;
+	num_b = 0;
 	while (i < size)
 	{
-		num_a += a[i * size + j];
+		num_a += a[i * size + i];
 		i++;
-		j++;
 	}
-	i = 0;
-	j = size -1;
+	j = size - 1;
 	while (j >= 0)
 	{
 		num_b += a[j * size + (size - j - 1)];
