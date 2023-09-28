@@ -2,7 +2,7 @@
 
 /**
  * _pow_recursion -rause to the power
- * @x: intger 
+ * @x: intger
  * @y: integr
  *
  * Return: integer
