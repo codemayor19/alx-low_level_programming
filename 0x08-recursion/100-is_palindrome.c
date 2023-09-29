@@ -11,12 +11,25 @@ int is_palindrome(char *s)
 	int len, i;
 
 	i = 0;
+	len = _strlen(s);
+	return (palind(s, i, len));
+}
+/**
+ * _strlen - check length
+ * @s: string value
+ *
+ * Return: integer
+ */
+int _strlen(char *s)
+{
+	int len;
+	
 	len = 0;
 	while (s[len] != '\0')
 	{
 		len++;
 	}
-	return (palind(s, i, len));
+	return len;
 }
 /**
  * palind - check palindrome
