@@ -22,14 +22,11 @@ int is_palindrome(char *s)
  */
 int _strlen(char *s)
 {
-	int len;
-	
-	len = 0;
-	while (s[len] != '\0')
+	if (*s == '\0')
 	{
-		len++;
+		return (0);
 	}
-	return len;
+	return (1 + _strlen(++s));
 }
 /**
  * palind - check palindrome
@@ -49,5 +46,5 @@ int palind(char *s, int i, int len)
 		return (1);
 	}
 	i = i + 1;
-	return (palind(s, i,len));
+	return (palind(s, i, len));
 }
