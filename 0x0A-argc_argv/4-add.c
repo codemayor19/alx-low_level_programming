@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	while (c < argc)
 	{
 		u = 0;
-		while(argv[c][u] != '\0')
+		while (argv[c][u] != '\0')
 		{
 			if (argv[c][u] < '\0' || argv[c][u] > '9')
 			{
