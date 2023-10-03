@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int c, result;
+	int c, u, result;
 
 	if (argc == 1)
 	{
@@ -21,14 +21,17 @@ int main(int argc, char *argv[])
 	c = 1;
 	while (c < argc)
 	{
-		if (atoi(argv[c]) >= 0 && atoi(argv[c]) <= 9)
+		u = 0;
+		while(argv[c][u] != '\0')
 		{
-			result += atoi(argv[c]);
-		} else
-		{
-			printf("Error\n");
-			return (1);
+			if (argv[c][u] < '\0' || argv[c][u] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+			u++;
 		}
+		result += atoi(argv[c]);
 		c++;
 	}
 	printf("%d\n", result);
