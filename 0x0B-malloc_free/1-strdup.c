@@ -23,6 +23,10 @@ char *_strdup(char *str)
 	{
 		size++;
 	}
+	if (str[size] == '\0' && size == 0)
+	{
+		size++;
+	}
 	if (size == 0)
 	{
 		return (NULL);
