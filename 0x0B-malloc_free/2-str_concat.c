@@ -47,7 +47,7 @@ int _strlen(char *str)
 	len = 0;
 	if (*str == '\0' || str == NULL)
 	{
-		len++;
+		len = len;
 	} else
 	{
 		while (str[len] != '\0')
