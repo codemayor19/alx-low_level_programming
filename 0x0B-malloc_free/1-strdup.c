@@ -13,6 +13,10 @@ char *_strdup(char *str)
 	int size, i;
 	char *ptrArray;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	i = 0;
 	size = 0;
 	while (str[size] != '\0')
@@ -28,7 +32,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	while (i <= size)
+	while (i < size)
 	{
 		ptrArray[i] = str[i];
 		i++;
