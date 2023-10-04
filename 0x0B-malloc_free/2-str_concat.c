@@ -16,7 +16,7 @@ char *str_concat(char *s1, char *s2)
 
 	s1_len = _strlen(s1);
 	s2_len = _strlen(s2);
-	ptrArray = malloc(((s2_len - 1) + (s1_len - 1)) * sizeof(char));
+	ptrArray = malloc((((s2_len) + (s1_len)) * sizeof(char)) + 1);
 	if (ptrArray == NULL)
 	{
 		return (NULL);
@@ -33,11 +33,12 @@ char *str_concat(char *s1, char *s2)
 		ptrArray[s1_len + i] = '\0';
 	} else
 	{
-		while (i <= s2_len)
+		while (i < s2_len)
 		{
 			ptrArray[s1_len + i] = s2[i];
 			i++;
 		}
+		ptrArray[s1_len + i] = '\0';
 	}
 	return (ptrArray);
 }
