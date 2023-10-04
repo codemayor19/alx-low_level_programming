@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	{
 		size++;
 	}
-	if (str[size] == '\0' && size == 0)
+	if (str[size] == '\0')
 	{
 		size++;
 	}
@@ -36,7 +36,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	while (i < size)
+	while (i <= size)
 	{
 		ptrArray[i] = str[i];
 		i++;
