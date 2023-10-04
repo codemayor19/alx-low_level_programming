@@ -11,7 +11,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int s1_len, s2_len, i;
+	unsigned int s1_len, s2_len, i;
 	char *ptrArray;
 
 	s1_len = _strlen(s1);
