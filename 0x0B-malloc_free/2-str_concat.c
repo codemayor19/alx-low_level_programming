@@ -28,10 +28,16 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 	i = 0;
-	while (i <= s2_len)
+	if (s2 == NULL)
 	{
-		ptrArray[s1_len + i] = s2[i];
-		i++;
+		ptrArray[s1_len + i] = '\0';
+	} else
+	{
+		while (i <= s2_len)
+		{
+			ptrArray[s1_len + i] = s2[i];
+			i++;
+		}
 	}
 	return (ptrArray);
 }
@@ -45,9 +51,12 @@ int _strlen(char *str)
 	int len;
 
 	len = 0;
-	if (*str == '\0' || str == NULL)
+	if (str == NULL)
 	{
 		len = len;
+	} else if (*str == '\0')
+	{
+		len = 0;
 	} else
 	{
 		while (str[len] != '\0')
