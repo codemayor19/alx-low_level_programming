@@ -47,6 +47,7 @@ int countWords(char *str)
 			wd++;
 			i += wordLen(str + i);
 		}
+		i++;
 	}
 	return (wd);
 }
