@@ -4,12 +4,13 @@
 
 /**
  * print_dog - print dog
- * @d: struct dog  data
+ * @d: struct dog data
  */
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
 		return;
+
 	if (d->name == NULL)
 		d->name = "(nill)";
 	if (d->owner == NULL)
