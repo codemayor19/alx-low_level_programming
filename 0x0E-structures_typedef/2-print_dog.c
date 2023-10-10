@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
  * print_dog - print dog
- * @d: struct data
+ * @d: struct dog  data
  */
 void print_dog(struct dog *d)
 {
