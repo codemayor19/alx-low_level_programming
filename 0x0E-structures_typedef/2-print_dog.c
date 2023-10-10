@@ -7,19 +7,15 @@
  */
 void print_dog(struct dog *d)
 {
-	char *name, *owner, *n == (nil);
-	float age;
-
 	if (d != NULL)
 	{
 		if (d->name == NULL)
 		{
-			name = n;}
-		else {
-			name = d->name;
+			d->name = "(nill)";
 		}
-		owner = d->owner;
-		age = d->age;
-		printf("Name: %s\nAge: %.1f\nOwner: %s\n", name, age, owner);
+		if (d->owner == NULL) {
+			d->owner = "(nill)";
+		}
+		printf("Name: %s\nAge: %f\nOwner: %s\n", name, age, owner);
 	}
 }
