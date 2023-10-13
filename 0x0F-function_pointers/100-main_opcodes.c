@@ -24,7 +24,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
+
 	arr = (char *)main;
+
 	for (i = 0; i < bytes; i++)
 	{
 		if (i == bytes - 1)
