@@ -7,7 +7,7 @@
 void print_bi(unsigned long int n)
 {
 	if (n == 0)
-		return ;
+		return;
 	print_bi(n >> 1);
 	if ((n & 1) == 1)
 		_putchar('1');
