@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * error_file - check if a file is opened and handle error
@@ -7,7 +7,7 @@
  * @file_to: destination file to copy to
  * Return: no return
  */
-void error_file(int file_from, int file_to)
+void error_file(int file_from, int file_to, char *argv[])
 {
 	if (file_from == -1)
 	{
