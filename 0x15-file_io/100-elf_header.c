@@ -19,7 +19,7 @@ void print_abi(unsigned char *e_ident);
 void print_osabi(unsigned char *e_ident);
 void print_type(unsigned int e_type, unsigned char *e_ident);
 void print_entry(unsigned long int e_entry, unsigned char *e_ident);
-V
+void close_elf(int elf);
 /**
  * check_elf - Checks if a file is an ELF file.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
@@ -117,10 +117,10 @@ void print_version(unsigned char *e_ident)
 	switch (e_ident[EI_VERSION])
 	{
 	case EV_CURRENT:
-		case EV_CURRENT:
+		printf(" (current)\n");
 		break;
 	default:
-		default:
+		printf("\n");
 		break;
 	}
 }
